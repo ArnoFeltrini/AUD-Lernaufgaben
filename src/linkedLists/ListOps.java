@@ -140,7 +140,7 @@ public class ListOps{
         return false;
     }
 
-//          ### Exercise 7 - Remove ###
+//          ### Exercise 7 - RemoveAll ###
     /**
      * This method finds an element in a linked list and removes all occurrences
      * @param list a linked list

@@ -11,10 +11,11 @@ public class TreeOps {
      * This method finds an element in a binary tree
      * @param root the root of a BinaryTree
      * @param t the key to look for
+     *@param comparator a comparator to help with the insertion
      * @param <T> the type of the element
      * @return returns true if the element is in the tree
      */
-    public static<T> boolean find(BinaryTreeNode<T> root, T t){
+    public static<T> boolean find(BinaryTreeNode<T> root, T t, Comparator<T> comparator){
         throw new RuntimeException("Exercise 1 binary tree not implemented"); //TODO BinaryTree 1
     }
 
@@ -22,10 +23,11 @@ public class TreeOps {
      * This method finds an element in a ternary tree
      * @param root the root of a TernaryTree
      * @param t the key to look for
+     *@param comparator a comparator to help with the insertion 
      * @param <T> the type of the element
      * @return returns true if the element is in the tree
      */
-    public static<T> boolean find(TernaryTreeNode<T> root, T t){
+    public static<T> boolean find(TernaryTreeNode<T> root, T t, Comparator<T> comparator){
         throw new RuntimeException("Exercise 1 ternary tree not implemented"); //TODO TernaryTree 1
     }
 
@@ -33,10 +35,11 @@ public class TreeOps {
      * This method finds an element in a multiway tree
      * @param root the root of a MultiWayTree
      * @param t the key to look for
+     *@param comparator a comparator to help with the insertion
      * @param <T> the type of the element
      * @return returns true if the element is in the tree
      */
-    public static<T> boolean find(MultiWayTreeNode<T> root, T t) {
+    public static<T> boolean find(MultiWayTreeNode<T> root, T t, Comparator<T> comparator) {
         throw new RuntimeException("Exercise 1 multi way tree not implemented"); //TODO MultiWayTree 1
     }
 
@@ -47,10 +50,11 @@ public class TreeOps {
      * @param root the root of a binary tree
      * @param replace the overwriting element
      * @param find the element to be overwritten
+     *@param comparator a comparator for the keys
      * @param <T> the type of the element
      * @return true if find was found
      */
-    public static<T> boolean overwrite(BinaryTreeNode<T> root, T replace, T find){
+    public static<T> boolean overwrite(BinaryTreeNode<T> root, T replace, T find, Comparator<T> comparator){
         throw new RuntimeException("Exercise 2 binary tree not implemented"); //TODO BinaryTree 2
     }
 
@@ -60,10 +64,11 @@ public class TreeOps {
      * @param root the root of a ternary tree
      * @param replace the overwriting element
      * @param find the element to be overwritten
+     *@param comparator a comparator for the keys
      * @param <T> the type of the element
      * @return true if find was found
      */
-    public static<T> boolean overwrite(TernaryTreeNode<T> root, T replace, T find){
+    public static<T> boolean overwrite(TernaryTreeNode<T> root, T replace, T find, Comparator<T> comparator){
         throw new RuntimeException("Exercise 2 ternary tree not implemented"); //TODO TernaryTree 2
     }
 
@@ -73,10 +78,11 @@ public class TreeOps {
      * @param root the root of a multiway tree
      * @param replace the overwriting element
      * @param find the element to be overwritten
+     *@param comparator a comparator for the keys
      * @param <T> the type of the element
      * @return true if find was found
      */
-    public static<T> boolean overwrite(MultiWayTreeNode<T> root, T replace, T find){
+    public static<T> boolean overwrite(MultiWayTreeNode<T> root, T replace, T find, Comparator<T> comparator){
         throw new RuntimeException("Exercise 2 multi way tree not implemented"); //TODO MultiWayTree 2
     }
 
@@ -87,10 +93,11 @@ public class TreeOps {
      * @param root the root of a binary tree
      * @param replace the overwriting elements
      * @param find the elements to be overwritten
+     *@param comparator a comparator for the keys
      * @param <T> the type of the elements
      * @return true if find was found
      */
-    public static<T> boolean overwriteAll(BinaryTreeNode<T> root, T replace, T find){
+    public static<T> boolean overwriteAll(BinaryTreeNode<T> root, T replace, T find, Comparator<T> comparator){
         throw new RuntimeException("Exercise 3 binary tree not implemented"); //TODO BinaryTree 3
     }
 
@@ -100,10 +107,11 @@ public class TreeOps {
      * @param root the root of a ternary tree
      * @param replace the overwriting elements
      * @param find the elements to be overwritten
+     *@param comparator a comparator for the keys
      * @param <T> the type of the elements
      * @return true if find was found
      */
-    public static<T> boolean overwriteAll(TernaryTreeNode<T> root, T replace, T find){
+    public static<T> boolean overwriteAll(TernaryTreeNode<T> root, T replace, T find, Comparator<T> comparator){
         throw new RuntimeException("Exercise 3 ternary tree not implemented"); //TODO TernaryTree 3
     }
 
@@ -113,10 +121,11 @@ public class TreeOps {
      * @param root the root of a multiway tree
      * @param replace the overwriting elements
      * @param find the elements to be overwritten
+     *@param comparator a comparator for the keys
      * @param <T> the type of the elements
      * @return true if find was found
      */
-    public static<T> boolean overwriteAll(MultiWayTreeNode<T> root, T replace, T find){
+    public static<T> boolean overwriteAll(MultiWayTreeNode<T> root, T replace, T find, Comparator<T> comparator){
         throw new RuntimeException("Exercise 3 multi way tree not implemented"); //TODO MultiWayTree 3
     }
 
@@ -127,10 +136,11 @@ public class TreeOps {
      * @param root the root of a binary tree
      * @param replace the overwriting element
      * @param i the index to put the new element
+     *@param comparator a comparator to compare the keys
      * @param <T> the type of the elements
      * @return true if an element was replaced
      */
-    public static<T> boolean overwriteAt(BinaryTreeNode<T> root, T replace, int i){
+    public static<T> boolean overwriteAt(BinaryTreeNode<T> root, T replace, int i, Comparator<T> comparator){
         throw new RuntimeException("Exercise 4 binary tree not implemented"); //TODO BinaryTree 4
     }
 
@@ -139,10 +149,11 @@ public class TreeOps {
      * @param root the root of a ternary tree
      * @param replace the overwriting element
      * @param i the index to put the new element
+     *@param comparator a comparator to compare the keys
      * @param <T> the type of the elements
      * @return true if an element was replaced
      */
-    public static<T> boolean overwriteAt(TernaryTreeNode<T> root, T replace, int i){
+    public static<T> boolean overwriteAt(TernaryTreeNode<T> root, T replace, int i, Comparator<T> comparator){
         throw new RuntimeException("Exercise 4 ternary tree not implemented"); //TODO TernaryTree 4
     }
     
@@ -151,10 +162,11 @@ public class TreeOps {
      * @param root the root of a multiway tree
      * @param replace the overwriting element
      * @param i the index to put the new element
+     *@param comparator a comparator to compare the keys
      * @param <T> the type of the elements
      * @return true if an element was replaced
      */
-    public static<T> boolean overwriteAt(MultiWayTreeNode<T> root, T replace, int i){
+    public static<T> boolean overwriteAt(MultiWayTreeNode<T> root, T replace, int i, Comparator<T> comparator){
         throw new RuntimeException("Exercise 4 multiway tree not implemented"); //TODO MultiWayTree 4
     }
 
